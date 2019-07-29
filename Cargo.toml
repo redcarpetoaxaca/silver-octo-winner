@@ -5,7 +5,7 @@ authors = ["Red Carpet"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+#![feature(proc_macro_hygiene)]
 
 [dependencies]
-
 rocket = "0.4.2"
