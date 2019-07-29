@@ -7,10 +7,12 @@ jobs:
       - image: rust:1
     steps:
       - checkout
-      - run: Install nightly
-        command: rustup toolchain install nightly
-      - run: Setup rust nightly default
-        command: rustup default nightly
+      - run: 
+          name: Install nightly
+          command: rustup toolchain install nightly
+      - run: 
+          name: Setup rust nightly default
+          command: rustup default nightly
       - run:
           name: Version information
           command: rustc --version; cargo --version; rustup --version
